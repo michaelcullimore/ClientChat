@@ -1,6 +1,7 @@
 package chat;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Student {
     private String firstName;
@@ -14,6 +15,6 @@ public class Student {
 	this.firstName = firstN;
 	this.lastName = lastN;
 	this.score = _score;
-	this.conversations = convos;// how do I initialize this???
+	this.conversations = new ArrayList<>(Arrays.asList(convos));
     }
 }
