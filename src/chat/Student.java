@@ -12,9 +12,34 @@ public class Student {
 
     // create a student
     public Student(String firstN, String lastN, double _score, String[] convos) {
-	this.firstName = firstN;
-	this.lastName = lastN;
-	this.score = _score;
+	this.setFirstName(firstN);
+	this.setLastName(lastN);
+	this.setScore(_score);
 	this.conversations = new ArrayList<>(Arrays.asList(convos));
+
+    }
+
+    public double getScore() {
+	return score;
+    }
+
+    public void setScore(double score) {
+	this.score = score;
+    }
+
+    public String getLastName() {
+	return lastName;
+    }
+
+    public void setLastName(String lastName) {
+	this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+	return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+	this.firstName = firstName;
     }
 }
